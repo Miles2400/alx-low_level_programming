@@ -4,7 +4,7 @@
  * print_array - prints n  elements of an array of integers, then a new line.
  * @a: this is the input array
  * @n: this is the length of the array
- * */
+ */
 
 void print_array(int *a, int n)
 {
@@ -12,9 +12,8 @@ void print_array(int *a, int n)
 
 	for (index_of_array = 0; index_of_array < n; index_of_array++)
 	{
-		printf ("%d", a[index_of_array]);
-
-		if (index_of_array != (n -1))
+		printf("%d", a[index_of_array]);
+		if (index_of_array != (n - 1))
 		{
 			printf(", ");
 		}
