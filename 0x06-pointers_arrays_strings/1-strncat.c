@@ -3,22 +3,31 @@
 #include <string.h>
 
 
+/**
+ * _strncat -this function concatenates two strings
+ *
+ * @src:source of strings
+ * @dest: destination of the string
+ * @n: length of int
+ *
+ * Return:  dest
+ */
+
 char *_strncat(char *dest, char *src, int n)
 {
-	int destlen = strlen(dest);
-	int srclen = strlen(src);
-	int p;
+	int i, j;
 
-	if (destlen + srclen + 1 <= n)
+	for (i = 0; dest[i] != '\0'; i++)
 	{
-		for ( p = 0; p < srclen; p++)
-		{
-			dest[destlen + p] = src[p];
-			putchar(dest[destlen + p]);
-		}
-		dest[destlen + srclen] = '\0'; 
+		continue;
 	}
+	for (j = 0; src[j] != '\0' && j < n; j++)
+	{
+		dest[i + j] = src[j];
+	}
+	dest[i + j] = '\0';
 	return (dest);
 }
+
 
 
