@@ -3,7 +3,7 @@
 #include <string.h>
 
 /**
- * _strcat - this function will concatnate two strings.
+ * *_strcat - this function will concatnate two strings.
  * @dest: the value of src will be added to it.
  * @src: the value will be moveed to dest.
  *Return: (dest)
@@ -19,7 +19,6 @@ char *_strcat(char *dest, char *src)
 		dest[destlen + i] = src[i];
 	}
 	dest[destlen + i] = '\n';
-	
 	return (dest);
 }
 
